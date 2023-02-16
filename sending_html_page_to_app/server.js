@@ -12,5 +12,9 @@ app.get("", (req, res) => {
 app.get("/contact", (req, res) => {
   res.sendFile(`${pathFile}/contact.html`);
 });
+// 404 page
+app.get("*", (req, res) => {
+  res.sendFile(`${pathFile}/pageNotFound.html`);
+});
 
 app.listen(4500);
