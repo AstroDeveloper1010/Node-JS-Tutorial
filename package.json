@@ -1,0 +1,26 @@
+{
+  "name": "node_js_tutorial",
+  "version": "1.0.0",
+  "description": "This repository is to learn Node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstroDeveloper1010/Node-JS-Tutorial.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Priyanshu Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AstroDeveloper1010/Node-JS-Tutorial/issues"
+  },
+  "homepage": "https://github.com/AstroDeveloper1010/Node-JS-Tutorial#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

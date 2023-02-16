@@ -1,0 +1,26 @@
+{
+  "name": "first_server",
+  "version": "1.0.0",
+  "description": "first_node_server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstroDeveloper1010/Node-JS-Tutorial.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Priyanshu Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AstroDeveloper1010/Node-JS-Tutorial/issues"
+  },
+  "homepage": "https://github.com/AstroDeveloper1010/Node-JS-Tutorial#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
