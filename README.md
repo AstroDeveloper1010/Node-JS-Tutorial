@@ -1,7 +1,7 @@
 # Node-JS-Tutorial
 This directory is to learn Node JS
 
-topic we have learnt till now :-
+Topic we have learnt till now :-
 1. Asynchronous Programming (setTimeOut(), Promise())
 2. Taking input from command line
 3. Using 'fs' module and its functions
