@@ -1,8 +1,7 @@
-const reqFilter = require('/middleware.js')
+const reqFilter = require('middleware/middleware.js')
 const express = require('express');
 const app = express();
 
-const reqFilter = (req, res, next) => {
-    
-}
+
+app.listen(4000);
 
