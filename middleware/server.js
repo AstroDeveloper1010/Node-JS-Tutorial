@@ -15,7 +15,7 @@ const reqFilter = (req, res, next) => {
     }
 }
 
-app.use(reqFilter);
+app.use(reqFilter); // using Middleware to send response to the server
 
 app.get('', (req, res) => {
     res.send("This is Home Page");
