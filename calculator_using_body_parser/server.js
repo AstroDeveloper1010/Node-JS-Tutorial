@@ -13,5 +13,8 @@ app.get('/', (req, res) => {
 app.get('/calculator', (req, res) => {
     res.sendFile(`${filepath}/calculator.html`);
 })
+app.post('/calculator', (req, res) => {
+    res.send('Input Fetched');
+})
 
 app.listen(4000);
