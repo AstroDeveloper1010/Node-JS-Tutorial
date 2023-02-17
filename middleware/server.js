@@ -29,4 +29,22 @@ app.get('/contact', (req, res) => {
     res.send("This is Contact Page");
 })
 
+/*
+    // if we don't want to use reqFilter in /contact then simply remove app.use(reqFilter) and pass reqFilter as a parameter in app.get('/contact', reqFilter, (req, res) => {
+        res.send('This is Contact Page')
+    })
+
+    app.get('', reqFilter,  (req, res) => {
+        res.send("This is Home Page");
+})
+
+    app.get('/about', (req, res) => {
+        res.send("This is About Page");
+})
+
+    app.get('/contact', (req, res) => {
+        res.send("This is Contact Page"); 
+})
+*/
+
 app.listen(4000);
