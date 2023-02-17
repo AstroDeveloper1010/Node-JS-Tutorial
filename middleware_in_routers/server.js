@@ -1,3 +1,4 @@
+const reqFilter = require('/middleware.js')
 const express = require('express');
 const app = express();
 
