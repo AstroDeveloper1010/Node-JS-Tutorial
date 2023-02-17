@@ -19,7 +19,8 @@ app.get('/about', (req, res) => {
         name: 'Priyanshu Jha',
         email: 'priyanshujha131@gmail.com',
         age: '20',
-        city: 'New Delhi'
+        city: 'New Delhi',
+        skills: ['javascript', 'c++', 'python', 'c', 'ui/ux designing', 'graphic designing', 'node js', 'express js']
     }
     res.render('about', {user});
 })
