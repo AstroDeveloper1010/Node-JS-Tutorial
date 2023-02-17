@@ -11,7 +11,17 @@ app.get('', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(`${pathfile}/contact.html`)
+    res.sendFile(`${pathfile}/contact.html`);
+})
+
+app.get('/about', (req, res) => {
+    const user = {
+        name: 'Priyanshu Jha',
+        email: 'priyanshujha131@gmail.com',
+        age: '20',
+        city: 'New Delhi'
+    }
+    res.render('about', {user});
 })
 
 app.listen(4000);
