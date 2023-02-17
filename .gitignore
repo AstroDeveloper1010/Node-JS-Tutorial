@@ -1,2 +1,2 @@
 # this file stores the files that should not be pushed to github
-node_modules/
+# node_modules/
