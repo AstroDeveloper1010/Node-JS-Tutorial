@@ -15,3 +15,4 @@ Topic we have learnt till now :-
 9. Creating dynamic page using EJS
 10. Learning to use Middleware in our server
 11. Made a calculator using body parser
+12. Made a weather app using open weather api
