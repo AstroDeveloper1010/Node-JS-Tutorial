@@ -1,10 +1,27 @@
+const path = require('path');
+const bodyParser = require('body-parser');
 const https = require('https');
 const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.use(bodyParser.urlencoded({extended: true}));
 
+const filepath = path.join(__dirname, 'public');
+
+app.get('/', (req, res) => {
+    res.sendFile(`${filepath}/index.html`)
+})
+
+app.listen(4000, () => {
+    console.log('Server is running on port 4000');
+});
+
+app.post('/', (req, res) => {
+    
+})
+
+/*
     const url = 'https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=1cdc5bf6abf70ae6ca69a708a09393eb&units=metric';
     https.get(url, (resp) => {
         console.log(resp.statusCode);
@@ -24,12 +41,4 @@ app.get('/', (req, res) => {
             res.send();
         })
     })
-
-    // res.write("This is home page");
-
-    // res.end();
-})
-
-app.listen(4000, () => {
-    console.log('Server is running on port 4000');
-});
+*/
