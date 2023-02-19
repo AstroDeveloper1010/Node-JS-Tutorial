@@ -17,10 +17,6 @@ app.get('/', (req, res) => {
             const pressure = weatherData.main.pressure;
             const humidity = weatherData.main.humidity;
 
-            // res.write(temp);
-            // res.write(desc);
-            // res.write(pressure);
-            // res.write(humidity);
             res.write('<p>Weather is ' + desc + '</p>')
             res.write('<p>temperature is' + temp + '</p>');
             res.write('<p>humidity is ' + humidity + '</p>');
@@ -34,4 +30,6 @@ app.get('/', (req, res) => {
     // res.end();
 })
 
-app.listen(5000);
+app.listen(4000, () => {
+    console.log('Server is running on port 4000');
+});
