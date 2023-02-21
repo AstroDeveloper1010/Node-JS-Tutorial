@@ -5,10 +5,23 @@ const bodyParser = require('body-parser');
 const app = express();
 const pathfile = path.join(__dirname, 'public');
 
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.post('/', (req, res) => {
+    const fname = req.body.firstname;
+    const lname = req.body.lastname;
+    const email = req.body.email;
+
+    console.log(fname + " " + lname + " " + email);
+
+    res.send('You have successfully subscribed our service.')
+})
+
 app.get('/', (req, res) => {
     res.sendFile(`${pathfile}/index.html`);
 })
 
-app.listen(4000, () => {
+const port = 4000;
+app.listen(port, () => {
     console.log("server is running at port 4000");
 })
