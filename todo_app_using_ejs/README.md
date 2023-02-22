@@ -1,6 +1,6 @@
-This is a todo list app made by using ejs.
+<strong>This is a todo list app made by using ejs.</strong>
 
-I made this app to learn to use ejs and get more familiar with node, express and npm packages.
+<p>I made this app to learn to use ejs and get more familiar with node, express and npm packages.</p>
 
-<p>Fearures of this app :-</p>
-    1. 
+<p>Features of this app :-</p>
+    coming soon...
