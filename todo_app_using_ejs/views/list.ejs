@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO APP</title>
 </head>
+
 <body>
     Welcome!
-    <p>Today is <%= $day %></p>
+    <p>Today is <%= $day %>
+    </p>
+
+    <strong style="color: red">TODO LIST</strong>
+    <ul>
+        <li>Learn Node js</li>
+        <li>Learn Express</li>
+        <li>Learn mySQL</li>
+        <li>Learn typescript</li>
+    </ul>
+    <form action="/" method="post">
+        <input type="text" name="newItem" id="newItem">
+        <input type="submit" value="add item">
+    </form>
 </body>
+
 </html>
