@@ -8,9 +8,11 @@ const app = express();
 
 const filepath = path.join(__dirname, 'public');
 
+let items = [];
+
 app.set('view engine', 'ejs');
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
     // res.sendFile(`${filepath}/index.html`)
@@ -27,6 +29,12 @@ app.get('/', (req, res) => {
     day = today.toLocaleDateString('en-US', options);
 
     res.render('list', { $day: day });
+})
+
+app.post('/', (req, res) => {
+    let item = req.body.newItem;
+    items.push(item);
+
 })
 
 const port = 4000;
