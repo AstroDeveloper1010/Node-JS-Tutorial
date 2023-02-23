@@ -13,6 +13,7 @@ let items = [];
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     // res.sendFile(`${filepath}/index.html`)
@@ -28,7 +29,7 @@ app.get('/', (req, res) => {
 
     day = today.toLocaleDateString('en-US', options);
 
-    res.render('list', { $day: day, listItems: items});
+    res.render('list', { $day: day, listItems: items });
 })
 
 app.post('/', (req, res) => {
