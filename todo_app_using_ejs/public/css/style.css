@@ -1,46 +1,46 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: antiquewhite;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    /* justify-content: center; */
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-.box{
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    /* justify-content: center; */
-    width: fit-content;
-    position: relative;
-    right: 40px;
-    line-height: 2rem;
-    /* position: absolute;
+.box {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  /* justify-content: center; */
+  width: fit-content;
+  position: relative;
+  right: 40px;
+  line-height: 2rem;
+  /* position: absolute;
     left: 0; */
 }
 
-body ul li{
-    list-style: none;
+body ul li {
+  list-style: none;
 }
 
-.submit_btn{
-    margin-top: 1rem;
-    margin-left: 3rem;
-    cursor: pointer;
-    position: relative;
-    right: 1rem;
+.submit_btn {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  cursor: pointer;
+  position: relative;
+  right: 1rem;
 }
 
-#newItem{
-    position: relative;
-    right: 1.5rem;
+#newItem {
+  position: relative;
+  right: 1.5rem;
 }
