@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs')%>
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <label for="title">Title</label>
+        <br>
+        <input type="text" name="$title" id="title">
+        <br>
+        <label for="post">Post</label>
+        <br>
+        <input type="text" name="$post" id="post">
+        <br>
+        <input type="submit" value="Publish">
+    </form>
