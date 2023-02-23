@@ -17,6 +17,7 @@ body{
     /* background-color: pink; */
     display: flex;
     flex-direction: row;
+    gap: 1rem;
     align-items: center;
     /* justify-content: center; */
     width: fit-content;
@@ -35,11 +36,11 @@ body ul li{
     margin-top: 1rem;
     margin-left: 3rem;
     cursor: pointer;
-    background-color: blue;
-    color: white;
+    position: relative;
+    right: 1rem;
 }
 
-.submit_btn:hover{
-    background-color: white;
-    color: blue;
+#newItem{
+    position: relative;
+    right: 1.5rem;
 }
