@@ -38,10 +38,10 @@ app.get('/compose', (req, res) => {
 });
 
 app.get('/post/:postName', (req, res) => {
-  const requestedTitle = req.params.postName;
+  const requestedTitle = _.lowerCase(req.params.postName);
 
   posts.forEach((post) => {
-    const storedTitle = post.title;
+    const storedTitle = _.lowerCase(post.title);
 
     if(storedTitle === requestedTitle){
       console.log('match found');
