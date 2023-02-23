@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
         default:
     }
 
-    res.render('list', { $day: day });
+    res.render('list', { $day: day});
 })
 
 const port = 4000;

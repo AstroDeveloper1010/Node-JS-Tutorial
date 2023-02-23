@@ -19,8 +19,9 @@
         <li>Learn Express</li>
         <li>Learn mySQL</li>
         <li>Learn typescript</li>
-        <% for(int i=0; i < items.length(); i++) %>
-            <% { %>
+        <% for(let i=0; i < listItems.length; i++) {%>
+                <li> <%= listItems[i] %> </li>
+            <% } %>
     </ul>
     <form action="/" method="post">
         <input type="text" name="newItem" id="newItem">

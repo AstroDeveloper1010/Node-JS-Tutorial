@@ -28,13 +28,13 @@ app.get('/', (req, res) => {
 
     day = today.toLocaleDateString('en-US', options);
 
-    res.render('list', { $day: day });
+    res.render('list', { $day: day, listItems: items});
 })
 
 app.post('/', (req, res) => {
     let item = req.body.newItem;
     items.push(item);
-
+    res.redirect('/');
 })
 
 const port = 4000;
