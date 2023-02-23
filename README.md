@@ -14,7 +14,8 @@ Topic we have learnt till now :-
 8. Learning the use of EJS template engine
 9. Creating dynamic page using EJS
 10. Learning to use Middleware in our server
-11. Made a calculator using body parser
-12. Made a weather app using open weather api
-13. Made a login portal where users can login and data will be stored using mailchimp api
-14. Made a todo list app using ejs and express js
+11. Created a calculator using body parser
+12. Created a weather app using open weather api
+13. Created a login portal where users can login and data will be stored using mailchimp api
+14. Created a todo list app using ejs and express js
+15. Created a blog app where users can post their blogs
