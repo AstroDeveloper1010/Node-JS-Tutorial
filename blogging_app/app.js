@@ -16,11 +16,11 @@ app.use(express.static("public"));
 let posts = [];
 
 app.get('/', (req, res) => {
-  res.render('home', { 
-    home: homeStartingContent, 
+  res.render('home', {
+    home: homeStartingContent,
     blogs: posts
   });
-  
+
   console.log(posts);
 });
 

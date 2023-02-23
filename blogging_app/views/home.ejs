@@ -4,9 +4,13 @@
         <%= home %>
     </p>
 
-    <% for(let i = 0; i < blogs.length; i++){ %>
-        <h1> <%= blogs[i].title %> </h1>
-        <p> <%= blogs[i].post %> </p>
-    <% } %>
+    <% for(let i=0; i < blogs.length; i++){ %>
+        <h1>
+            <%= blogs[i].title %>
+        </h1>
+        <p>
+            <%= blogs[i].post %>
+        </p>
+        <% } %>
 
-    <%- include('partials/footer.ejs') %>
+            <%- include('partials/footer.ejs') %>
